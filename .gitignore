@@ -1,0 +1,7 @@
+result
+.env
+.env.*
+*.key
+*.pem
+.direnv/
+.venv/
