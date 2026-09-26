@@ -60,6 +60,6 @@ else
   MSYS_NO_PATHCONV=1 "$DOCKER" run --rm \
     -v "$HOST_PARENT:/src" -v workos-nix-store:/nix \
     -e SRC="/w/$NAME" -e CORE="/w/workos" -e OUT="/src/$NAME" \
-    nixos/nix sh -c "mkdir -p /w && cp -r /src/$NAME /w/ && { [ -d /src/workos ] && cp -r /src/workos /w/ || true; } && rm -rf /w/*/.git && \
+    docker.io/nixos/nix sh -c "mkdir -p /w && cp -r /src/$NAME /w/ && { [ -d /src/workos ] && cp -r /src/workos /w/ || true; } && rm -rf /w/*/.git && \
       nix --extra-experimental-features 'nix-command flakes' shell nixpkgs#gnused nixpkgs#gnugrep nixpkgs#coreutils -c sh -c '$INNER' check $*"
 fi
