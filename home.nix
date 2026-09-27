@@ -6,7 +6,7 @@
   workos.secretsPolicy = ./work-os/secrets-policy.yaml;
 
   # Hermes Agent (Nous Research) sobre la suscripción de Claude:
-  # `claude login` y después `hermes-bootstrap`, una vez por máquina.
+  # se instala solo al hacer login; `claude login` va a mano.
   workos.hermes.enable = true;
   # `pc`: ver otro PC con Sunshine a pantalla completa (Moonlight).
   # workos.pc.enable = true;
