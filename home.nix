@@ -5,6 +5,12 @@
   # Allowlist real de secretos por skill (default-deny).
   workos.secretsPolicy = ./work-os/secrets-policy.yaml;
 
+  # Hermes Agent (Nous Research) sobre la suscripción de Claude:
+  # `claude login` y después `hermes-bootstrap`, una vez por máquina.
+  workos.hermes.enable = true;
+  # `pc`: ver otro PC con Sunshine a pantalla completa (Moonlight).
+  # workos.pc.enable = true;
+
   # Segundo factor con la app de códigos del teléfono (workos
   # docs/DECISIONS.md #15). Después de instalar, post-install-setup.sh corre
   # `workos-totp-setup` para crear los códigos; hasta entonces todo entra
