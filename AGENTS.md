@@ -7,6 +7,11 @@ completa, invariantes y el runbook de instalación están en el
 [`AGENTS.md` de workos](https://github.com/OscarVargas97/workos/blob/main/AGENTS.md)
 (localmente: `../workos/AGENTS.md`) — leelo primero.
 
+**Antes de leer, analizar o modificar nada:** `git pull --ff-only` en este
+repo y en sus hermanos (`workos`, `workos-private`). Se edita desde varias
+máquinas y la copia local puede estar atrasada. Si el pull falla (cambios
+locales que chocan, ramas divergentes), avisar a la persona antes de seguir.
+
 ## 1. Rol de este repo
 
 - Es el **flake de entrada** del sistema: `nixos-rebuild --flake .#<hostname>`.
