@@ -7,9 +7,9 @@
     let
       # Todo host lleva la identidad + los extras personales; el resto
       # (base del sistema, home-manager, CLI) viene de workos.
-      host = modules: workos.lib.mkHost ([ ./identity.nix ./home.nix ] ++ modules);
-    in
-    {
+      host = modules:
+        workos.lib.mkHost ([ ./identity.nix ./home.nix ] ++ modules);
+    in {
       # VM de prueba (QEMU/Boxes).
       nixosConfigurations.vm = host [ workos.nixosModules.vm ];
 

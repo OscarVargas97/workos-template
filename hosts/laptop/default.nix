@@ -1,6 +1,5 @@
 # Molde de host: scripts/setup.sh copia esta carpeta a hosts/<hostname>/.
-{ lib, ... }:
-{
+{ lib, ... }: {
   imports = [ ./hardware-configuration.nix ];
 
   networking.hostName = lib.mkForce "laptop";
