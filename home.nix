@@ -1,7 +1,6 @@
 # Extras personales y de tus empresas sobre la base de workos: paquetes,
 # aliases, VPNs, lo que no tendría sentido para otra persona.
-{ config, pkgs, ... }:
-{
+{ config, ... }: {
   # Allowlist real de secretos por skill (default-deny).
   workos.secretsPolicy = ./work-os/secrets-policy.yaml;
 
